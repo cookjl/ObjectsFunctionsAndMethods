@@ -86,15 +86,15 @@ def circle_and_rectangle():
     window=rg.RoseWindow(800,600)
     x1=200
     y1=200
-    centerpoint1=(x1, y1)
+    centerpoint1= rg.Point(x1, y1)
     radius=100
     x2=300
     y2=300
     x3=500
     y3=400
-    cornerpoint1=(x2,y2)
-    cornerpoint2=(x3,y3)
-    centerpoint2=(x3-x2,y3-y2)
+    cornerpoint1= rg.Point(x2,y2)
+    cornerpoint2= rg.Point(x3,y3)
+    centerpoint2= rg.Point(x3-x2,y3-y2)
     circle=rg.Circle(centerpoint1,radius)
     circle.fill_color='blue'
     rectangle=rg.Rectangle(cornerpoint1,cornerpoint2)
@@ -116,7 +116,7 @@ def circle_and_rectangle():
     window.close_on_mouse_click()
 
     # ------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its doc-string above.
+    # Done: 3. Implement this function, per its doc-string above.
     #   -- ANY objects that meet the criteria are fine.
     # Put a statement in   main   to test this function
     #    (by calling this function).
@@ -157,10 +157,10 @@ def lines():
     y3=0
     x4=600
     y4=300
-    start1=(x1,y1)
-    start2=(x3,y3)
-    end1=(x2,y2)
-    end2=(x4,y4)
+    start1= rg.Point(x1,y1)
+    start2= rg.Point(x3,y3)
+    end1= rg.Point(x2,y2)
+    end2= rg.Point(x4,y4)
     line1=rg.Line(start1,end1)
     line2=rg.Line(start2,end2)
     line1.attach_to(window)
@@ -175,9 +175,8 @@ def lines():
     window.render()
     window.close_on_mouse_click()
 
-    line1=rg.Line()
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # Done: 4. Implement and test this function.
     # ------------------------------------------------------------------
 
 

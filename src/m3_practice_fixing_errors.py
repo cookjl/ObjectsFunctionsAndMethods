@@ -41,10 +41,10 @@ def main():
 
 def print_math():
     """ Prints some calculated values. """
-    x = math.acos(3.1415926535)
+    x = math.acos(math.pi)
     print(x)
-    y = math.asin(3.1415926535)
-    print("The sine of PI is,"+ y )
+    y = math.asin(math.pi)
+    print("The sine of PI is" ,y)
 
 
 def turtle_fun():
